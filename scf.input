@@ -1,0 +1,48 @@
+# Descriptive name for the system
+system.name = phenanthrene
+
+# Quantum mechanical description
+system.spinType = NoSpin
+system.neutralAtomDataDirectory = /data/home/kbatzin2/MontiWork/bases/
+
+calculation.SCF.donatorObject = ./NanodcalObject.mat
+
+
+# Positions and chemical species of the atoms
+calculation.control.lengthUnit = angstrom
+system.atomFile = ./CentralCell.xyz
+
+# Leads information
+system.numberOfLeads = 2
+system.typeOfLead1 = Left
+system.voltageOfLead1 = 0.0
+system.objectOfLead1 = /data/home/kbatzin2/MontiWork/hetHex/bluntTipTransport/electrode/NanodcalObject.mat
+system.typeOfLead2 = Right
+system.voltageOfLead2 = 0.0
+system.objectOfLead2 = /data/home/kbatzin2/MontiWork/hetHex/bluntTipTransport/electrode/NanodcalObject.mat
+
+
+
+# Control parameters
+
+## What quantities should be calculated
+calculation.name = scf
+
+## Speed of convergence of the algorithms
+calculation.SCF.startingMode = H
+calculation.SCF.mixingMode = H
+calculation.SCF.mixMethod = Pulay
+calculation.SCF.mixRate = 0.1
+calculation.SCF.maximumSteps = 200
+
+
+## Format for input and output of information
+calculation.control.energyUnit = eV
+calculation.control.byPassCentralCellCheck = false
+calculation.xcFunctional.Type = 'GGA_PBE96'
+calculation.control.precision = 'normal'
+
+
+
+
+

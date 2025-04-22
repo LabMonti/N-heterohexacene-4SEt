@@ -1,0 +1,43 @@
+SYSTEM = Relaxations	
+
+# DOS
+#############################
+ISMEAR = 0 		
+SIGMA  = 0.2           			
+ICHARG = 1   
+ 
+IVDW = 12     
+
+# Electronic minimization
+#############################
+ENCUT = 450 
+PREC  = Accurate 		
+LORBIT  = 11 		
+LASPH    = TRUE 		
+NELM = 200 
+NELMIN = 5 
+EDIFF = 1E-5 
+IBRION = 2           	
+ISIF = 2 
+ISYM = 2 
+NSW  = 5000  
+EDIFFG = -0.01  
+
+ALGO  = Fast      
+LREAL = Auto 		 
+LWAVE = True 
+LCHARG = True 
+LVTOT = False 
+LAECHG = .TRUE.
+LELF=.TRUE.
+
+# Mixer
+#############################
+AMIN = 0.01
+
+# Parallelization
+#############################
+NCORE = 32 
+
+
+

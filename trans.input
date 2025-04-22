@@ -1,0 +1,9 @@
+system.object = ../NanodcalObject.mat
+
+calculation.name = transmission
+
+calculation.transmission.method = 'GreenFunction'
+calculation.transmission.leadPairs = {[1,2]}
+calculation.transmission.energyPoints = [-2:0.02:2]
+
+calculation.control.logOutputLevel = [2,1]      % default

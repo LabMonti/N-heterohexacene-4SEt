@@ -8,5 +8,5 @@ Also including VASP ("INCAR" relaxation, "KPOINTS" AIMD) and NanoDCAL ("scf.inpu
 -EXPERIMANTAL DATA-
 
 Each .mat file contains a single matlab cell array with each cell containing Nx2 array with the first column corresponding 
-to interelectrode distance in units of nanometers and the second column corresponding to conductance in units of G_0.
+to interelectrode distance in units of nanometers and the second column corresponding to conductance in units of G_0. Each .mat file is from a different sample (e.g. 143_5).
 
